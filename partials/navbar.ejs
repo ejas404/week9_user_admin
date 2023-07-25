@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid nav-div">
+      <div class="logoleft">
+        <a class="navbar-brand link-light" href="#"><%= locals.logoname%></a>
+      </div>
+      
+      <div class="" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active link-light" aria-current="page" href="/user/logout">Logout</a>
+          </li>
+
+          <% if (locals.isAdmin) {%>
+          <li class="nav-item">
+            <a class="nav-link active link-light" aria-current="page" href="/admin/userdatas">Dashboard</a>
+          </li>
+          <%}%>
+          
+        
+        </ul>
+      </div>
+    </div>
+  </nav>

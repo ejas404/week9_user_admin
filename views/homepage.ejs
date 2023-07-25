@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/header')%>
+    </head>
+    <body>
+        <main>
+       <div id="homecontainer">
+        <div id="divleft"></div>
+        <div class="signupDiv">
+        
+            <h1>Create your account</h1>
+            <a href="/user/signup" class="signupbutton">Sign Up</a>
+        </div>
+        <div id="divright">
+            <h1>Log In</h1>
+            <form action="/user/login" method="post">
+                <label for="email">Email</label><br>
+                <input type="text" name="email"><br>
+                <label for="password">Password</label><br>  
+                <input type="password" name="password" autocomplete="off"><br>
+                <input type="submit" value="Log In">
+
+                <div id="message" class="<%= locals.color %>"><%= locals.message %></div>
+            </form>
+        </div>
+       </div>
+    </main>
+
+    </body>
+</html>

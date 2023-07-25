@@ -1,0 +1,106 @@
+:root{
+    --main : rgb(60, 26, 77);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#homecontainer{
+    width: 100%;
+    height: 100vh;
+   position: relative;
+    overflow: hidden;
+}
+#divleft{
+    background-color: var(--main);   
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    z-index: -1;
+    
+    transform: rotate(45deg) translateX(-250px)scale(1.4) translateY(80px);
+}
+#divright{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    width: 35%;
+}
+#divright input{
+    box-sizing: border-box;
+    width:100%;
+    padding:5px 5px;
+    margin: 15px 0;
+}
+#divright label{
+    font-size: 20px;
+}
+.signupDiv{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-60%);
+    left: 10%;
+    z-index: 100;
+    color: #fff;
+    word-wrap:unset;
+
+}
+.box{
+    width: 100%px;
+    height: 100vh;
+    background: linear-gradient(135deg, #fff 50%, var(--main) 50%);
+}
+#formcontain{
+    background-color: #fff;
+    width: 40%;
+    border-radius: 10px;
+    
+   
+}
+.form-group{
+   padding: 10px;
+}
+.red {
+    color: red;
+}
+.navbar{
+    background-color:var(--main);
+    display: flex;
+    justify-content: space-between;
+}
+.dash-body{
+    width: 100%;
+    height: calc(100vh - 60px);
+
+}
+.dbody-container{
+    width: 40%;
+    min-height: 40%;
+    background-color:aliceblue;
+    border: .5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -5px 5px var(--main);
+    
+}
+.userdata-container{
+    width: 70%;
+    padding: 10px 5px;
+    background-color:aliceblue;
+}
+i{
+    color: var(--main);
+}
+.signupbutton{
+    color: #fff;
+    font-size: 20px;
+
+    &:hover{
+        color: blue;
+    }
+}
